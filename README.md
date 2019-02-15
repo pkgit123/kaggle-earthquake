@@ -38,3 +38,11 @@ unzip test.zip -d test_folder
 >
 1. Move zip files to an archive folder
 1. Create a .gitignore file for the test_folder and the archive_folder
+1. Change permissions for the downloaded file.
+	1. Error in the jupyter notebook
+> "OSError: Initializing from file failed"
+	1. Simple solution is to change the mode to the file path
+```shell
+chmod 777 file_path
+```
+
